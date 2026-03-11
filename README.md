@@ -36,21 +36,21 @@ The core logic is separated from console input/output so it can be **tested inde
 # Project Structure
 
 ```
-quiz-grade-calculator
+cs-115-assigment-1
 │
 ├── pom.xml
 │
 ├── src
 │   ├── main
 │   │   └── java
-│   │       └── com/example/quiz
+│   │       └── quiz
 │   │           ├── QuizGradeCalculatorApp.java
 │   │           ├── QuizGradeService.java
 │   │           └── QuizSummary.java
 │   │
 │   └── test
 │       └── java
-│           └── com/example/quiz
+│           └── quiz
 │               └── QuizGradeServiceTest.java
 │
 └── README.md
@@ -97,8 +97,8 @@ mvn -version
 ## Step 1 — Clone or download the project
 
 ```bash
-git clone <repository-url>
-cd quiz-grade-calculator
+git clone https://github.com/pvargasc/cs-115-assigment-1.git
+cd cs-115-assigment-1
 ```
 
 Or download the project ZIP and extract it.
@@ -125,7 +125,7 @@ Maven will:
 Execute:
 
 ```bash
-mvn exec:java -Dexec.mainClass="com.example.quiz.QuizGradeCalculatorApp"
+mvn exec:java -Dexec.mainClass="quiz.QuizGradeCalculatorApp"
 ```
 
 ---
@@ -189,7 +189,7 @@ Maven will:
 -------------------------------------------------------
  T E S T S
 -------------------------------------------------------
-Running com.example.quiz.QuizGradeServiceTest
+Running quiz.QuizGradeServiceTest
 
 Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
 
@@ -209,7 +209,7 @@ Most IDEs detect JUnit automatically.
 3. Navigate to:
 
 ```
-src/test/java/com/example/quiz/QuizGradeServiceTest.java
+src/test/java/quiz/QuizGradeServiceTest.java
 ```
 
 4. Click the **Run** icon next to the test class.
